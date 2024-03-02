@@ -1,0 +1,66 @@
+.CardContents {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  justify-content: space-around;
+  background-color: rgb(62, 117, 235);
+  padding-top: 5%;
+}
+
+.CardItems {
+  background-color: white;
+  height: fit-content;
+  margin: 20px;
+  border-radius: 30px;
+  padding-bottom: 20px;
+}
+
+.CardType {
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+}
+
+.CardTitle {
+  text-align: center;
+}
+
+.AvailableDetails {
+  line-height: 35px;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.NotAvialableCardDetails {
+  line-height: 35px;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: grey;
+}
+.CardBtn {
+  background-color: rgb(62, 117, 235);
+  border: none;
+  width: 90%;
+  margin-left: 5%;
+  height: 45px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+@media all and (max-width: 790px) {
+  .CardContents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (max-width: 500px) {
+  .CardContents {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
